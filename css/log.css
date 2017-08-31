@@ -1,0 +1,148 @@
+/* 背景 */
+html,body{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height:100%;
+	font-family:'微软雅黑';
+	background:url('../images/login_background.jpg') no-repeat;
+	background-size:cover;
+}
+body>img{
+	margin-left: 40px;
+	margin-top: 40px;
+}
+/* 登录区域 */
+div.register{
+	background:white;
+	width:450px;
+	height:410px;
+	border-top:rgb(242,79,23) 2px solid;
+	box-shadow:5px 5px 15px gray;
+	position:absolute;
+	right:100px;
+	bottom:300px;
+	padding:30px;
+}
+
+/* 设置每个内容div */
+.register>div{
+	border:1px solid white;
+	position:relative;
+}
+/* 设置input样式 */
+.register>div>input{
+	border:2px solid tomato;
+	width:387px;
+	height:60%;
+	border-radius:0 8px 8px 0;
+	position:absolute;
+	right:0px;
+	outline:none;
+	font-size:20px;
+}
+.register>div>input::-webkit-input-placeholder{
+	font-size:18px;
+	color:darkgray;
+	font-weight:bolder;
+	text-indent:10px;
+}
+/* 设置验证码input */
+#check{
+	left:0px;
+	width:150px;
+	border-radius:8px 0 0 8px;
+}
+.register>div p{
+	/* position:absolute; */
+	margin-top: 55px;
+	color:rgb(199, 9, 3);
+}
+.register>div> .icon-ren,.icon-icons06{
+	/* z-index:-2; */
+	position:absolute;
+	border:2px solid tomato;
+	border-radius:8px 0 0 8px;
+	width:45px;
+	font-size:34px;
+	padding-left:10px;
+	color:rgb(199, 9, 3);
+	background:rgb(253,193, 192);
+}
+.icon-notsee,.icon-eye{
+	position:absolute;
+	right:14px;
+	top:12px;
+}
+.icon-notsee{
+	font-size:8px;
+	top:14px;
+}
+.icon-eye{
+	display:none;
+}
+/* 逐个设置内容div */
+.register>div:nth-of-type(1){
+	height:65px;
+}
+.red{
+	background:tomato;
+	height:20px;
+	width:5px;
+	display:inline-block;
+	margin-right:15px;
+}
+#title{
+	font-family:'黑体';
+	font-size:24px;
+	font-weight:bold;
+	color:rgb(77, 77, 77);
+}
+/* 用户名 */
+.register>div:nth-of-type(2){
+	height:85px;
+}
+/* 密码 */
+.register>div:nth-of-type(3){
+	height:85px;
+}
+/* 验证码 */
+.register>div:nth-of-type(4){
+	height:75px;
+}
+/* 验证图 */
+#change_pic{
+	position:absolute;
+	right:142px;
+	width:150px;
+	height:60%;
+	border:2px solid tomato;
+	border-radius:0 8px 8px 0;
+	text-align:center;
+	line-height:50px;
+	background:rgb(253,193, 192);
+}
+#change_txt{
+	position:absolute;
+	right:25px;
+	top:18px;
+	text-decoration: none;
+}
+/* 登录 */
+.register>div:nth-of-type(5){
+	height:60px;
+	width:100%;
+	background:rgb(205, 9, 3);
+	border-radius:8px;
+	text-align:center;
+	color:white;
+	line-height:60px;
+	font-size:25px;
+}
+/* 用户注册，忘记密码 */
+.register>div:nth-of-type(6){
+	height:40px;
+	display:flex;
+	justify-content: space-between;
+	padding:5px;
+}

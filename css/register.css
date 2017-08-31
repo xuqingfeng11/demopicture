@@ -1,0 +1,139 @@
+/* 背景 */
+html,body{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height:100%;
+	font-family:'微软雅黑';
+	background:url('../images/login_background.jpg') no-repeat;
+	background-size:cover;
+}
+body>img{
+	margin-left: 40px;
+	margin-top: 40px;
+}
+/* 注册区域 */
+div.register{
+	background:white;
+	width:450px;
+	height:500px;
+	border-top:rgb(242,79,23) 2px solid;
+	box-shadow:5px 5px 15px gray;
+	position:absolute;
+	right:100px;
+	bottom:130px;
+	padding:30px;
+	display:flex;
+	flex-wrap:wrap;
+}
+/* 设置每个div宽度100% */
+div.register>div{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	/* align-items:flex-start; */
+}
+/* 第一行 用户注册 */
+div.register>div:nth-of-type(1){
+	align-items:center;
+}
+div.register>div .red{
+	background:tomato;
+	height:20px;
+	width:5px;
+	display:inline-block;
+	margin-right:15px;
+}
+#title{
+	font-family:'黑体';
+	font-size:24px;
+	font-weight:bold;
+	color:rgb(77, 77, 77);
+}
+
+/* 设置每行icon和input和p样式 */
+.register>div> .icon-erweima,.icon-icons06,.icon-phone{
+	border:2px solid tomato;
+	border-radius:8px 0 0 8px;
+	height:50px;
+	width:50px;
+	text-align: center;
+	line-height:50px;
+	font-size:25px;
+	color:rgb(199, 9, 3);
+	background:rgb(253,193, 192);
+}
+/* .icon-eye,.icon-notsee{
+	position:absolute;
+	left:430px;
+} */
+.eye1{
+	top:270px;
+}
+.eye2{
+	top:355px;
+}
+/* 设置睁眼 */
+.icon-eye{
+	position:absolute;
+	left:430px;
+	/* opacity:0; */
+	display:none;
+}
+/* 设置闭眼 */
+.icon-notsee{
+	position:absolute;
+	left:430px;
+	font-size:8px;
+}
+.register>div p{
+	color:rgb(199, 9, 3);
+}
+div.register>div>input{
+	border:2px solid tomato;
+	width:380px;
+	height:50px;
+	border-radius:0 8px 8px 0;
+	outline:none;
+	font-size:20px;
+}
+.register>div>input::-webkit-input-placeholder{
+	font-size:18px;
+	color:darkgray;
+	font-weight:bolder;
+	text-indent:10px;
+}
+/* 设置第二行验证码样式 */
+div.register #checkcode{
+	width:200px;
+}
+div.register #getcode{
+	width:140px;
+	height:54px;
+	border-radius:8px;
+	text-align:center;
+	line-height:50px;
+	color:white;
+	font-size:20px;
+	font-weight:bolder;
+	background:rgb(255, 160, 172);
+	margin-left:10px;
+}
+/* 设置第六行同意协议并提交 */
+div.register #login{
+	width:100%;
+	height:54px;
+	border-radius:8px;
+	line-height:50px;
+	color:white;
+	font-size:18px;
+	font-weight:bolder;
+	background:rgb(220, 9, 3);
+	padding-left:160px;
+	text-align:center;
+}
+/* 设置第七行底部信息 */
+div.register>div:nth-of-type(7){
+	justify-content:space-between;
+
+}

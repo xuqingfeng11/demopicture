@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="iconfont1/iconfont.css">
+	<link rel="stylesheet" href="iconfont2/iconfont.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/log.css">
+	<script src='js/common.js'></script>
+	<script src='js/jquery-1.11.0.js'></script>
+	<script src='js/swiper.animate1.0.2.min.js'></script>
+	<script src='js/swiper.min.js'></script>
+	<script src='js/log.js'></script>
+</head>
+<body>
+	<img src="images/nav-logo.png" alt="">
+	<!-- 登录区 -->
+	<form action="index.html" id='frm' onsubmit='return checkInput()'>
+		<div class='register'>
+			<div>
+				<div class='red'></div>
+				<span id='title'>用户登录</span>
+			</div>
+			<div class='user'>
+				  <i class="icon iconfont icon-ren"></i>
+				  <input type="text" placeholder="用户名" id="user">
+				  <p>用户名必须填写</p>
+			</div>
+			<div class='password'>
+				  <i class="icon iconfont icon-icons06"></i>
+				  <input type="password" placeholder="密码" id='password'>
+				  <i class="icon iconfont icon-notsee"></i>
+				  <i class="icon iconfont icon-eye"></i>
+				  <p>密码必须填写</p>
+			</div>
+			<div class='check'>
+				<input type="text" placeholder="验证码" id='check'>
+				<div id='change_pic'></div>
+				<a href="#" id='change_txt'>看不清？换图片</a>
+				<p>验证码必须填写</p>
+			</div>
+			<div class='login'>登录</div>
+			<div>
+				<a href="register.html">用户注册</a>
+				<a href="#">忘记密码？</a>
+			</div>
+
+		</div>
+	</form>
+</body>
+</html>
